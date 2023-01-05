@@ -45,7 +45,7 @@
   }
 
   .introducao h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .introducao h1::before {
@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .introducao {
     grid-template-columns: 1fr;
   }

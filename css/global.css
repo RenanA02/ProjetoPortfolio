@@ -34,3 +34,17 @@ ul {
   text-transform: uppercase;
   max-width: 5ch;
 }
+
+@media (max-width: 1000px) {
+  .subtitulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    max-width: initial !important;
+    text-transform: capitalize;
+  }
+}
