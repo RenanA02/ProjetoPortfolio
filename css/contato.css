@@ -1,12 +1,12 @@
 .contato-container {
   max-width: 1200px;
-  padding: 120px 20px;
+  padding: 120px 20px 60px 20px;
   margin: 0 auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  /* position: relative; */
+  align-items: center;
 }
 
 .contato {
@@ -15,10 +15,31 @@
 }
 
 .contato-texto {
-  align-self: center;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ccc;
 }
 
-.contato-lista {
-  font-size: 2rem;
-  margin-bottom: 40px;
+.contato-info li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.contato-copy {
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contato-info li {
+    font-size: 1.5rem;
+  }
 }
